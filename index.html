@@ -5,21 +5,36 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Voting Info</title>
+    <title>Interesting Animals</title>
   </head>
   <body>
     <div class="container">
       <header class="jumbotron">
         <h1>Interesting Animals</h1>
       </header>
-      <main>
+
         <div class="container">
-          <div class="choices">
-            <h2>Select which animal you would like to view</h2>
-            <button class="btn btn-primary" id="frogbtn">Frog</button>
-            <button class="btn btn-success" id="gorillabtn">Albino-Gorilla</button>
-            <button class="btn btn-danger" id="mothbtn">Hawk-Moth</button>
-          </div>
+            <div class="radio">
+                <label>
+                  <input type="radio" name="animal" value="frog" checked>
+                  Psychedelic Frog
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                  <input type="radio" name="animal" value="albino-gorilla">
+                  Albino Gorilla
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                  <input type="radio" name="animal" value="bird">
+                  Moth-Hawk
+                </label>
+            </div>
+
+          <button class="btn btn-success">Show</button>
+
           <div id="frog">
             <h1 class="well">Psychedelic frog</h1>
             <p>Here is some info and a video about the Sonoran Desert Toad</p>
@@ -48,9 +63,7 @@
             </ul>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/dtvML8nL7Wo" frameborder="0" allowfullscreen></iframe>
           </div>
-        </div>
 
-      </main>
     </div>
 
   </body>

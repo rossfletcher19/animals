@@ -1,27 +1,25 @@
 $(document).ready(function() {
 
+  $(".btn btn-success").click(function() {
+    var animal = $("input:radio[name=animal]:checked").val();
 
-    $("button#frogbtn").click(function() {
-      $('#frog').show();
-      $('#bird').hide();
-      $('#albino-gorilla').hide();
-    });
+      if (animal === "frog") {
+        $("#frog").show();
+        $("#albino-gorilla").hide();
+        $("#bird").hide();
+      }
 
-    $("button#gorillabtn").click(function() {
-      $('#albino-gorilla').show();
-      $('#frog').hide();
-      $('#bird').hide();
-    });
+      else if (animal === "albino-gorilla") {
+        $("#albino-gorilla").show();
+        $("#frog").hide();
+        $("#bird").hide();
+      }
 
-    $("button#mothbtn").click(function() {
-      $('#bird').show();
-      $('#frog').hide();
-      $('#albino-gorilla').hide();
+      else (animal === "bird") {
+        $("#bird").show();
+        $("#albino-gorilla").hide();
+        $("#frog").hide();
+      }
 
-    });
-
-
-
-
-
+  });
 });
